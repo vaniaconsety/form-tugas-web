@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pembayaran</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="stylesheet" href="Petshop.css">
+    </head>
+
+    <body>
+        <header class="navbar">
+            <div class="logo">
+                <a href="Branda.html" class="btn-back">← <i class="fa-solid fa-paw"></i> Pawtopia</a>
+            </div>
+            <h1>Halaman Pembayaran</h1>
+        </header>
+
+        <main class="payment-page">
+        <section class="payment-info"><div id="paymentInfo"></div></section>
+
+        <form id="userForm">
+            <h3>Data Diri</h3>
+            <label for="name">Nama Lengkap:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Nomor HP:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <h3>Opsi Pembayaran</h3>
+            <select id="paymentOption" name="paymentOption" required>
+                <option value="">$Pilih Opsi$</option>
+                <option value="pickup_dp">Ambil di Tempat - DP Rp 500.000</option>
+                <option value="pickup_full">Ambil di Tempat - Full Payment</option>
+                <option value="delivery_full">Diantar - Full Payment</option></select>
+
+            <div id="selectedPaymentInfo" class="selected-payment-info"></div>
+
+            <h3>Metode Pembayaran</h3>
+            <select id="paymentMethod" name="paymentMethod" required>
+                <option value="">$Pilih Metode$</option>
+
+                <option value="transfer">Transfer Bank</option>
+                <option value="ewallet">E-Wallet (OVO, Dana, Gopay)</option>
+                <option value="cod">Bayar di Tempat (COD)</option>
+            </select>
+
+            <button type="submit">Bayar Sekarang</button>
+        </form>
+        </main>
+        <script src="Petshop.js?v=5"></script>
+    </body>
+</html>

@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Visit Our Store - Pawtopia</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="stylesheet" href="Petshop.css">
+    </head>
+    <body>
+        <header class="navbar store-navbar">
+            <div class="logo">
+                <a href="Branda.html" class="btn-back">← <i class="fa-solid fa-paw"></i> Pawtopia</a>
+            </div>
+            
+            <h1>Visit Our Store</h1>
+            <div class="store-nav-links">
+                <a href="Branda.html"><i class="fa-solid fa-house"></i> Home</a>
+                <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i>Cart <span id="cartCount">0</span> </a>
+            </div>
+        </header>
+
+        <main class="store-page">
+            <section class="store-heading">
+                <p class="store-label">PAWTOPIA PET SHOP</p>
+                <h2>Everything Your Pet Needs</h2>
+                <p>
+                Temukan makanan dan mainan favorit untuk sahabat
+                berbulu kesayanganmu!
+                </p>
+            </section>
+            <section class="store-list">
+                <div class="store-card">
+                    <div class="store-image"><img src="Makanan Anjing Premium.jpe" alt="Makanan Anjing Premium"></div>
+
+                    <div class="store-info">
+                        <span class="store-category">DOG FOOD</span>
+                        <h3>Makanan Anjing Premium</h3>
+                        <p class="store-price">Rp 220.000</p>
+                        <p class="store-stock">
+                        Stok: <span id="stock-dogFood">10</span>
+                    </p>
+
+                    <div class="store-qty">
+                        <button type="button"
+                                onclick="changeQty('dogFood', -1)">−</button>
+                        <input type="text" id="qty-dogFood"
+                               value="1" readonly>
+                        <button type="button"
+                                onclick="changeQty('dogFood', 1)">+</button>
+                    </div>
+
+                    <button type="button" class="store-add-btn"
+                            onclick="addToCart('Makanan Anjing Premium',220000,'dogFood')">
+                        <i class="fa-solid fa-cart-plus"></i>
+                        Tambah ke Keranjang
+                    </button>
+                </div>
+            </div>
+
+            <div class="store-card">
+                <div class="store-image">
+                    <img src="makanan kucing organik.jpe"
+                         alt="Makanan Kucing Organik">
+                </div>
+
+                <div class="store-info">
+                    <span class="store-category">CAT FOOD</span>
+                    <h3>Makanan Kucing Organik</h3>
+                    <p class="store-price">Rp 350.000</p>
+                    <p class="store-stock">
+                        Stok: <span id="stock-catFood">8</span>
+                    </p>
+
+                    <div class="store-qty">
+                        <button type="button"
+                                onclick="changeQty('catFood', -1)">-</button>
+                        <input type="text" id="qty-catFood"
+                               value="1" readonly>
+                        <button type="button"
+                                onclick="changeQty('catFood', 1)">+</button>
+                    </div>
+
+                    <button type="button" class="store-add-btn"
+                            onclick="addToCart('Makanan Kucing Organik',350000,'catFood')">
+                        <i class="fa-solid fa-cart-plus"></i>
+                        Tambah ke Keranjang
+                    </button>
+                </div>
+            </div>
+
+                <div class="store-card">
+                    <div class="store-image">
+                        <img src="Makanan Kelinci.jpe" alt="Makanan Kelinci">
+                    </div>
+
+                    <div class="store-info">
+                        <span class="store-category">RABBIT FOOD</span>
+                        <h3>Makanan Kelinci</h3>
+                        <p class="store-price">Rp 170.000</p>
+                        <p class="store-stock"> Stok: <span id="stock-rabbitFood">10</span></p>
+
+                        <div class="store-qty">
+                            <button type="button"onclick="changeQty('rabbitFood', -1)">-</button>
+                            <input type="text" id="qty-rabbitFood"
+                                 value="1" readonly>
+                            <button type="button"onclick="changeQty('rabbitFood', 1)">+</button>
+                        </div>
+
+                        <button type="button" class="store-add-btn"
+                            onclick="addToCart('Makanan Kelinci',170000,'rabbitFood')">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            Tambah ke Keranjang
+                        </button>
+                    </div>
+                </div>
+
+                <div class="store-card">
+                    <div class="store-image">
+                        <img src="Mainan Doggy.jpe"
+                         alt="Mainan Anjing">
+                    </div>
+
+                    <div class="store-info">
+                        <span class="store-category">DOG TOYS</span>
+                        <h3>Mainan Anjing</h3>
+                        <p class="store-price">Rp 70.000</p>
+                        <p class="store-stock">
+                        Stok: <span id="stock-MainanDoggy">28</span>
+                        </p>
+
+                        <div class="store-qty">
+                            <button type="button"
+                                onclick="changeQty('MainanDoggy', -1)">−</button>
+                            <input type="text" id="qty-MainanDoggy"
+                               value="1" readonly>
+                            <button type="button"
+                                onclick="changeQty('MainanDoggy', 1)">+</button>
+                        </div>
+
+                        <button type="button" class="store-add-btn"
+                            onclick="addToCart('Mainan Anjing',70000,'MainanDoggy')">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            Tambah ke Keranjang
+                        </button>
+                    </div>
+                </div>
+
+                <div class="store-card">
+                    <div class="store-image">
+                        <img src="Mainan Kucing.jpe" alt="Mainan Kucing">
+                    </div>
+
+                    <div class="store-info">
+                        <span class="store-category">CAT TOYS</span>
+                        <h3>Mainan Kucing</h3>
+                        <p class="store-price">Rp 70.000</p>
+                        <p class="store-stock">
+                            Stok: <span id="stock-MainanCat">12</span>
+                        </p>
+
+                        <div class="store-qty">
+                            <button type="button"
+                                onclick="changeQty('MainanCat', -1)">-</button>
+                            <input type="text" id="qty-MainanCat"
+                               value="1" readonly>
+                            <button type="button"
+                                onclick="changeQty('MainanCat', 1)">+</button>
+                        </div>
+
+                        <button type="button" class="store-add-btn"
+                            onclick="addToCart('Mainan Kucing',70000,'MainanCat')">
+                            <i class="fa-solid fa-cart-plus"></i>
+                         Tambah ke Keranjang
+                        </button>
+                     </div>
+                 </div>
+            </section>
+        </main>
+        <footer class="site-footer">
+             <p>&copy; 2026 Pawtopia Store. All Rights Reserved.</p>
+             <p>Made with <i class="fa-solid fa-heart"></i> for your pets.</p>
+        </footer>
+        <script src="Petshop.js"></script>
+    </body>
+</html>

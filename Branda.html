@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Pawtopia</title>
+
+        <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="stylesheet" href="Petshop.css">
+    </head>
+    <body>
+        <header class="nevbar">
+        <div class="logo">
+            <img src="logo paw.jpe" alt="Pawtopia Logo">
+            <span>Pawtopia</span>
+        </div>
+
+        <nav>
+            <a href="Beranda.html" class="active"></a>
+        </nav>
+    
+        <div class="nav-right">
+
+            <!-- Search -->
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input id="searchInput" type="text" placeholder="Cari hewan (anjing/kucing/kelinci)...">
+            </div>
+
+            <i class="fa-regular fa-bell nav-icon"></i>
+            <a href="cart.html" class="cart" id="cartButton">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span id="cartCount">0</span>
+            </a>
+
+            <a href="Setting.html"><i class="fa-solid fa-gear nav-icon"></i></a>
+            <div class="profile"><!-- Profile -->
+                <a href="profil.html"><i class="fa-solid fa-user"></i></a>
+            </div>
+        </div>
+        </header>
+
+        <div class="banner">
+            <span class="dot"></span>
+            <strong>BERGABUNG DENGAN 1,240+ TEMAN PAW YANG SUDAH TEMUKAN RUMAH SELAMANYA</strong>
+        </div>
+
+        <main>
+            <section class="hero">
+                <div class="hero-content">
+                    <p class="welcome"> Wellcome To Pawtopia</p>
+
+                    <h1> 
+                       Pawtopia - Adopsi Hewan 
+                       <span>Temukan Sahabat Barumu</span>
+                    </h1>
+                    <p class="description">
+                        Setiap hewan berhak mendapatkan rumah penuh kasih. 
+                        Melalui program adopsi, kamu bisa memberi kesempatan kedua 
+                        bagi anjing, kucing, dan hewan lainnya untuk hidup bahagia bersama keluarga baru. 
+                        Bergabunglah dengan kami dan jadilah bagian dari perjalanan mereka menuju kehidupan yang lebih baik.
+                    </p>
+                </div>
+                <div class="hero-buttons">
+
+                    <a href="Menu.html" class="btn-primary">
+                        Explore Paw 
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a href="VisitOurStore.html" class="btn-primary">
+                        <i class="fa-solid fa-store"></i>
+                        Visit Our Store
+                    </a>
+                </div>
+                <div class="hero-image">
+                    <img src="LOGO.jpe" alt="Cute Paw For You">
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="section-title">
+                    <p class="label"> Handpicked Companions</p>
+                    <h2>Meet Your Soulmate</h2>
+                </div>
+                <div class="pet-menu">
+                    <button><a href="Menu.html"><i class="fa-solid fa-paw"></i> All Pets</a></button>
+                    <button><a href="Anjing.html"><i class="fa-solid fa-dog"></i> Dogs</a></button>
+                    <button><a href="Kucing.html"><i class="fa-solid fa-cat"></i> Cats</a></button>
+                    <button><a href="Kelinci.html"><i class="fa-solid fa-carrot"></i> Rabbits</a></button>
+                </div>
+            </section>
+            
+            <section class="pet-list">
+                <!---Milo-->
+                <div class="pet-card" data-type="anjing">
+                    <img src="Milo.jpe" alt="Golden Retriever Mix">
+                    <div class="pet-info">
+                        <p class="match">98% Match</p>
+                        <p class="location">Medan</p>
+                        <h3>GOLDEN RETRIEVER MIX</h3>
+                        <p class="size">Large</p>
+                        <h2>Milo</h2>
+                        <ul class="traits">
+                            <li>Energetic</li>
+                            <li>Cuddle Bug</li>
+                            <li>Ball Fetcher</li>
+                        </ul>
+                        <a href="milo.html" class="btn-primary">Meet Milo →</a>
+                    </div>
+                </div>
+
+                <!---Olav-->
+                <div class="pet-card" data-type="kucing">
+                    <img src="Olav.jpe" alt="British Shorthair">
+                    <div class="pet-info">
+                        <p class="match">87% Match</p>
+                        <p class="location">Medan</p>
+                        <h3>BRITISH SHORTHAIR</h3>
+                        <p class="size">Small</p>
+                        <h2>Olav</h2>
+                        <ul class="traits">
+                            <li>Calm & Gentle</li>
+                            <li>Independent</li>
+                            <li>Playful</li>
+                        </ul>
+                        <a href="Olav.html" class="btn-primary">Meet Olav →</a>
+                    </div>
+                </div>
+
+                <!---Ello-->
+                <div class="pet-card" data-type="kelinci">
+                    <img src="ELLO.jpe" alt="Hollan Lop">
+                    <div class="pet-info">
+                        <p class="match">88% Match</p>
+                        <p class="location">Medan</p>
+                        <h3>HOLLAN LOP</h3>
+                        <p class="size">Medium</p>
+                        <h2>Ello</h2>
+                        <ul class="traits">
+                            <li>Gentle</li>
+                            <li>Veggie Lover</li>
+                            <li>Litter Trained</li>
+                        </ul>
+                        <a href="Ello.html" class="btn-primary">Meet Ello →</a>
+                    </div>
+                </div>
+
+                <!---Pip-->
+                <div class="pet-card" data-type="kelinci">
+                    <img src="Pip.jpe" alt="Mini Lop">
+                    <div class="pet-info">
+                        <p class="match">97% Match</p>
+                        <p class="location">Medan</p>
+                        <h3>MINI LOP</h3>
+                        <p class="size">Small</p>
+                        <h2>Pip</h2>
+                        <ul class="traits">
+                            <li>Sweet & Gentle</li>
+                            <li>Playful</li>
+                            <li>Social & Affectionate</li>
+                        </ul>
+                        <a href="Pip.html" class="btn-primary">Meet Pip →</a>
+                    </div>
+                </div>
+
+                <!---Loly-->
+                <div class="pet-card" data-type="kucing">
+                    <img src="Loly.jpe" alt="Cornish Rex">
+                    <div class="pet-info">
+                        <p class="match">77% Match</p>
+                        <p class="location">Medan</p>
+                        <h3>CORNISH REX</h3>
+                        <p class="size">Medium</p>
+                        <h2>Loly</h2>
+                        <ul class="traits">
+                            <li>Playful</li>
+                            <li>Curious</li>
+                            <li>Loyal</li>
+                        </ul>
+                        <a href="Loly.html" class="btn-primary">Meet Loly →</a>
+                    </div>
+                </div>
+
+                <!---Dolly-->
+                <div class="pet-card" data-type="anjing">
+                    <img src="DOLLY.jpe" alt="Dachshund">
+                    <div class="pet-info">
+                        <p class="match">98% Match</p>
+                        <p class="location">Medan</p>
+                        <h3>DACHSHUND</h3>
+                        <p class="size">Medium</p>
+                        <h2>Dolly</h2>
+                        <ul class="traits">
+                            <li>Brave</li>
+                            <li>Playful</li>
+                            <li>Loyal</li>
+                        </ul>
+                        <a href="DOLLY.html" class="btn-primary">Meet Dolly →</a>
+                    </div>
+                </div>
+
+                <!---Rocky-->
+                <div class="pet-card" data-type="kelinci">
+                    <img src="Rocky.jpe" alt="Giant Angora">
+                    <div class="pet-info">
+                        <p class="match">86% Match</p>
+                        <p class="location">Medan</p>
+                        <h3>GIANT ANGORA</h3>
+                        <p class="size">Small</p>
+                        <h2>Rocky</h2>
+                        <ul class="traits">
+                            <li>Gentle</li>
+                            <li>Calm</li>
+                            <li>Affectionate</li>
+                        </ul>
+                        <a href="Rocky.html" class="btn-primary">Meet Rocky →</a>
+                    </div>
+                </div>
+            </section>
+            
+            <!--REVIEW ORANG NICH-->
+            <section class="reviews">
+                <h2>What People Say ?</h2>
+                <div class="review-card">
+                    <img src="Sarah.jpe" alt="Sarah" class="review-photo">
+                    <div class="review-content">
+                        <p>"Adopsi di Pawtopia sangat mudah dan aman. Milo sekarang jadi sahabat terbaik saya!"</p>
+                        <h4>- Sarah, Medan</h4>
+                        <p class="stars">⭐⭐⭐⭐⭐</p>
+                    </div>
+                </div>
+                
+                <div class="review-card">
+                    <img src="Andi.jpe" alt="Andi" class="review-photo">
+                    <div class="review-content">
+                        <p>"Prosesnya cepat, timnya ramah, dan hewan yang diadopsi sehat. Highly recommended!"</p>
+                        <h4>- Andi, Jakarta</h4>
+                        <p class="stars">⭐⭐⭐⭐</p>
+                    </div>
+                </div>
+                
+                <div class="review-card">
+                    <img src="Lina.jpe" alt="Lina" class="review-photo">
+                    <div class="review-content">
+                        <p>"Saya senang sekali bisa memberi rumah baru untuk Bella. Terima kasih Pawtopia!"</p>
+                        <h4>- Lina, Surabaya</h4>
+                        <p class="stars">⭐⭐⭐⭐⭐</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="site-footer">
+            <div class="footer-logo">
+                <img src="logo paw.jpe" alt="Pawtopia Logo">
+                <h2>Pawtopia</h2>
+                <p>Tempat perlindungan modern yang berkomitmen pada penyelamatan penuh kasih, 
+                pencocokan sesuai karakter hewan, dan pendampingan seumur hidup setelah adopsi.</p>
+            </div>
+
+            <div class="footer-nav">
+                <h3>Navigation</h3>
+                <a href="Branda.html">Home</a><br>
+                <a href="Menu.html">Browse Pets</a><br>
+                <a href="AboutUs.html">About Us</a><br>
+                <a href="VisitOurStore.html">Our Store</a>
+            </div>
+
+            <div class="footer-hours">
+                <h3>Sanctuary Hours</h3>
+                <p>Mon - Sat: 9:00 AM - 6:00 PM</p>
+                <p>Sunday: Visiting by Appointment Only</p>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2026 Pawtopia Medan. All Rights Reserved.</p>
+                <p>Dibuat dengan ❤️ untuk semua hewan rescue di seluruh dunia.</p>
+            </div>
+        </footer>
+        <script src="Petshop.js">
+        </script>
+     </body>
+</html>

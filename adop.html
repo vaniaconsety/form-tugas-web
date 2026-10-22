@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Adopsi Hewan - Pawtopia</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="stylesheet" href="Petshop.css">
+    </head>
+    <body>
+        <header class="navbar">
+            <div class="logo">
+                <a href="Branda.html" class="btn-back">← <i class="fa-solid fa-paw"></i> Pawtopia</a>
+            </div>
+            <h1>Adopsi Hewan</h1>
+        </header>
+        <main class="adoption-page">
+            <div class="adoption-heading">
+                <span>PAWTOPIA ADOPTION</span>
+
+                <h2>Temukan Hewan untukmu</h2>
+                <p>
+                    Pilih hewan yang ingin kamu adopsi dan tentukan
+                    opsi pembayaran yang sesuai.
+                </p>
+            </div>
+            <section class="adoption-section">
+                <div class="adoption-section-title"><i class="fa-solid fa-store"></i>
+                    <div>
+                        <h3>Ambil di Tempat</h3>
+                        <p>Bayar DP terlebih dahulu dan ambil hewan secara langsung.</p>
+                    </div>
+                </div>
+                <form action="Paymant.html"
+                    method="get"
+                    class="adoption-card"
+                    onsubmit="localStorage.removeItem('cart')">
+
+                    <label for="pet1">Pilih Hewan</label>
+                    <select id="pet1" name="pet" required>
+                        <option value="Olav" data-price="23000000"> Olav - Rp 23.000.000</option>
+                        <option value="Milo" data-price="3500000">Milo - Rp 3.500.000</option>
+                        <option value="Rocky" data-price="800000">Rocky - Rp 800.000</option>
+                        <option value="Dolly" data-price="10000000">Dolly - Rp 10.000.000</option>
+                        <option value="Ello" data-price="1800000">Ello - Rp 1.800.000</option>
+                        <option value="Pip" data-price="1500000">Pip - Rp 1.500.000</option>
+                        <option value="Loly" data-price="1500000">Loly - Rp 1.500.000</option>
+                        <option value="Bella" data-price="700000">Bella - Rp 700.000</option>
+                        <option value="Moci" data-price="2200000">Moci - Rp 2.200.000</option>
+                        <option value="White" data-price="3000000">White - Rp 3.000.000</option>
+                    </select>
+
+                    <input type="hidden" name="mode" value="dp">
+                    <input type="hidden" id="price1" name="price" value="">
+                    <div class="adoption-payment-info"> <span>Down Payment</span><strong>Rp 500.000</strong></div>
+
+                    <button type="submit"> <i class="fa-solid fa-wallet"></i>Bayar DP</button>
+                </form>
+            </section>
+
+            <section class="adoption-section">
+                <div class="adoption-section-title"><i class="fa-solid fa-truck"></i>
+                    <div>
+                    <h3>Diantar ke Tempat</h3>
+                        <p>Hewan akan diantar ke alamat yang kamu berikan.</p>
+                    </div>
+                </div>
+                
+                <form action="Paymant.html" method="get" class="adoption-card" onsubmit="localStorage.removeItem('cart')">
+
+                <label for="pet2">Pilih Hewan</label>
+                <select id="pet2" name="pet" required>
+                    <option value="Olav" data-price="23000000">
+                        Olav - Rp 23.000.000
+                    </option>
+
+                    <option value="Milo" data-price="3500000">
+                        Milo - Rp 3.500.000
+                    </option>
+
+                    <option value="Rocky" data-price="800000">
+                        Rocky - Rp 800.000
+                    </option>
+
+                    <option value="Dolly" data-price="10000000">
+                        Dolly - Rp 10.000.000
+                    </option>
+
+                    <option value="Ello" data-price="1800000">
+                        Ello - Rp 1.800.000
+                    </option>
+
+                    <option value="Pip" data-price="1500000">
+                        Pip - Rp 1.500.000
+                    </option>
+
+                    <option value="Loly" data-price="1500000">
+                        Loly - Rp 1.500.000
+                    </option>
+
+                    <option value="Bella" data-price="700000">
+                        Bella - Rp 700.000
+                    </option>
+
+                    <option value="Moci" data-price="2200000">
+                        Moci - Rp 2.200.000
+                    </option>
+
+                    <option value="White" data-price="3000000">
+                        White - Rp 3.000.000
+                    </option>
+
+                </select>
+
+
+                <label for="address">Alamat Pengantaran</label>
+                <textarea id="address" name="address" rows="4"
+                          placeholder="Masukkan alamat lengkap untuk pengantaran..."
+                          required></textarea>
+
+                <input type="hidden" name="mode" value="full">
+                <input type="hidden" id="price2" name="price" value="">
+
+                <div class="adoption-payment-info">
+                    <span>Total Pembayaran</span>
+                    <strong id="fullPrice">Rp 0</strong>
+                </div>
+
+
+                <button type="submit">
+                    <i class="fa-solid fa-credit-card"></i>
+                    Bayar Full
+                </button>
+                </form>
+            </section>
+        </main>
+        <script src="Petshop.js"></script>
+    </body>
+</html>
